@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="378.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.usersmanagement.availableusers.AvailableUsersController">
+   <children>
+      <TextFlow prefHeight="27.0" prefWidth="600.0" textAlignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Available Users" textAlignment="RIGHT" wrappingWidth="131.91015625">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+         <padding>
+            <Insets bottom="4.0" top="4.0" />
+         </padding>
+      </TextFlow>
+      <ListView fx:id="usersList" prefHeight="353.0" prefWidth="448.0" />
+   </children>
+</VBox>

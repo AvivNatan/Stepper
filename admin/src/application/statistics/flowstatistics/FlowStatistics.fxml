@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.statistics.flowstatistics.FlowStatisticsController">
+   <children>
+      <TableView fx:id="flowsStatistics" prefHeight="400.0" prefWidth="482.0">
+         <columns>
+            <TableColumn fx:id="flowName" minWidth="20.0" prefWidth="56.333343505859375" text="Flow Name" />
+            <TableColumn fx:id="NumExecutions" minWidth="20.0" prefWidth="121.0" text="Number Of Executions" />
+            <TableColumn fx:id="timeExecutions" prefWidth="135.66668701171875" text="Time Of Executions" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <BarChart fx:id="flowStatisticsBar">
+        <xAxis>
+          <CategoryAxis label="Flows Names" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Executions Number" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</VBox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="flowExecutionHistory" alignment="CENTER" prefHeight="1098.0" prefWidth="1390.0" spacing="30.0" styleClass="forback" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainappclient.executionhistory.FlowExecutionHistoryController">
+   <children>
+      <GridPane prefHeight="76.0" prefWidth="1137.0" styleClass="forback">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="397.33331298828125" minWidth="10.0" prefWidth="251.3333740234375" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="822.6666259765625" minWidth="10.0" prefWidth="822.6666259765625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="37.0" prefWidth="140.0" text="Filter By Result:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="resultFilterComboBox" prefHeight="31.0" prefWidth="202.0" GridPane.columnIndex="1" />
+         </children>
+         <padding>
+            <Insets left="60.0" right="30.0" top="20.0" />
+         </padding>
+      </GridPane>
+      <fx:include fx:id="tableExecutionHistory" source="tableOfExecutions/TableExecutionHistory.fxml" />
+      <fx:include fx:id="treeAndDetails" source="detailsofselectdexecution/ExecutionHistoryDetails.fxml" />
+   </children>
+   <padding>
+      <Insets left="20.0" right="20.0" top="10.0" />
+   </padding>
+</VBox>

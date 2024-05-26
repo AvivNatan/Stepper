@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Main-Class: application.MainAdmin
+Class-Path: kotlin-stdlib-1.4.10.jar kotlin-stdlib-common-1.4.10.jar okh
+ ttp-4.9.1.jar okio-2.8.0.jar gson-2.1.jar gson-2.1-javadoc.jar gson-2.1
+ -sources.jar
+

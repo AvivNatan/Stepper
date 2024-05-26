@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<HBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="800.0" styleClass="forback" visible="false" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainappclient.flowsdashboard.flowdetails.FlowDetailsController">
+   <children>
+      <GridPane hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="520.0" styleClass="forback" vgap="10.0">
+        <columnConstraints>
+          <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.99996948242188" />
+          <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="345.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.66667175292969" minHeight="10.0" prefHeight="35.0" />
+            <RowConstraints maxHeight="83.33332824707031" minHeight="10.0" prefHeight="48.33332824707031" />
+          <RowConstraints maxHeight="160.6666717529297" minHeight="10.0" prefHeight="59.0" />
+          <RowConstraints maxHeight="160.99998474121094" minHeight="10.0" prefHeight="29.333328247070312" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="179.33334350585938" minHeight="10.0" prefHeight="82.66665649414062" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" />
+            <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="80.0" />
+          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" />
+        </rowConstraints>
+         <children>
+            <Label text="Name Flow:" />
+            <Label text="Description:" GridPane.rowIndex="1" />
+            <ScrollPane fitToHeight="true" fitToWidth="true" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <content>
+                  <TextFlow>
+                     <children>
+                        <Text fx:id="Description" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </children>
+                  </TextFlow>
+               </content>
+            </ScrollPane>
+            <Button fx:id="ExecuteFlowButton" mnemonicParsing="false" onAction="#ExecuteFlowButtonAction" prefHeight="27.0" prefWidth="357.0" text="Execute Flow" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Formal Outputs:" GridPane.rowIndex="2" />
+            <Label text="Is Flow Read Only:" GridPane.rowIndex="3" />
+            <Label text="Free Inputs information:" GridPane.rowIndex="5" />
+            <Label text="Outputs information:" GridPane.rowIndex="6" />
+            <Label fx:id="NameFlow" GridPane.columnIndex="1">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <ScrollPane fitToHeight="true" fitToWidth="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <content>
+                  <TextFlow>
+                     <children>
+                        <Text fx:id="FormalOutputs" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </children>
+                  </TextFlow>
+               </content>
+            </ScrollPane>
+            <Label fx:id="ReadOnly" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <fx:include fx:id="freeInputsDescription" source="freeinputsdetails/FreeInputsDescription.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <fx:include fx:id="outputsDescription" source="outputsdetails/OutputsDescription.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" layoutX="237.0" layoutY="373.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <fx:include fx:id="stepsDescription" source="stepsdetails/StepsDescription.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <ScrollPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <content>
+                  <TextFlow prefHeight="44.0" prefWidth="326.0">
+                     <children>
+                        <Text fx:id="Description" strokeType="OUTSIDE" strokeWidth="0.0" />
+                     </children>
+                  </TextFlow>
+               </content>
+            </ScrollPane>
+            <TextFlow lineSpacing="6.0" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4">
+               <children>
+                  <Label prefWidth="97.0" text="Steps information:" />
+                  <Label prefHeight="17.0" prefWidth="117.0" text="Click For Information" />
+               </children>
+               <padding>
+                  <Insets top="11.0" />
+               </padding>
+            </TextFlow>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" />
+         </padding>
+      </GridPane>
+      <AnchorPane prefHeight="500.0" prefWidth="300.0" styleClass="forback">
+         <children>
+            <fx:include fx:id="stepMoreDescription" source="stepdetails/StepMoreDescription.fxml" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
