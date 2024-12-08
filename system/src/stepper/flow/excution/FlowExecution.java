@@ -59,6 +59,7 @@ public class FlowExecution implements Serializable
         {
             freeInputs.get(entry.getKey()).setContent(entry.getValue().getContent());
         }
+
     }
 
     public String getUserName() {

@@ -22,7 +22,6 @@ public class StepExecutionContextImp implements StepExecutionContext , Serializa
         this.flowExecution=flowExecution;
     }
 
-
     @Override
     public <T> T getDataValue(String dataName, Class<T> expectedDataType, StepDefinition stepDefinition) {
         // assuming that from the data name we can get to its data definition
