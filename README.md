@@ -111,20 +111,23 @@ Role-Based Access Control: Permissions determine accessible workflows.
 **For Managers**
   
 - Have elevated permissions to access all flows and execution histories
+- 
+## Flow Definitions - regular user
+![Stepper Definitions](assets/definition.PNG)
 
 ## Execution - regular user 
-![Stepper execution](assert/הרצה.PNG)
+![Stepper execution](assets/execution.PNG)
+
+## Input for execution - regular user
+![Stepper history](assets/input.PNG)
 
 ## History - regular user
-![Stepper history](assert/מסך היסטוריה.PNG)
-
-## Flow Definitions - regular user
-![Stepper Definitions](assert/מסך פולאו דיפינישיין.PNG)
+![Stepper history](assets/History.PNG)
 
 ## role manager - Admin 
-![Stepper new role](assert/ניהול תפקידים אדמין.PNG)
+![Stepper new role](assets/roleManager.PNG)
 
 ## create new role - Admin 
-![Stepper new role](assert/יצירת תפקיד חדש.PNG)
+![Stepper new role](assets/newRole.PNG)
 
 
