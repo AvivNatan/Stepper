@@ -1,6 +1,6 @@
 # Stepper Project
 ## Overview
-The Stepper Project is a Java-based workflow management system that allows users to design, execute, and manage workflows (referred to as "flows") composed of reusable components (steps). It is built with a multithreaded, client-server architecture to support simultaneous operations and provide a scalable, user-friendly platform for managing complex processes.
+Stepper is a generic workflow engine designed to allow non-technical users to define and execute various operational processes through a simple, uniform interface. It is built around the concept of reusable, independent units of logic called Steps, each performing a specific task (e.g., deleting a file, running a command). Steps can be connected via inputs and outputs—similar to how LEGO bricks connect—forming a Flow that represents a complete operational scenario. By combining different steps, users can build and run flexible workflows to automate complex processes efficiently.
 
 This project demonstrates advanced Java development skills, focusing on modularity, GUI integration, and effective data management.
 
