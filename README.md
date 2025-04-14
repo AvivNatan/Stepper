@@ -5,6 +5,19 @@ Stepper is a generic workflow engine designed to allow non-technical users to de
 This project demonstrates advanced Java development skills, focusing on modularity, GUI integration, and effective data management.
 
 ---
+## Architecture
+
+Stepper is built as a Java-based monolithic web application, packaged as a .war file and deployed on an Apache Tomcat servlet container.
+
+The application follows a layered architecture:
+
+Presentation Layer – RESTful endpoints exposed via Tomcat, accessible by both admin and client users.
+
+Logic Layer – Core logic is managed by a central Utils component, which handles the orchestration of steps, flows, and data transfers.
+
+Data Transfer Layer – Communication between layers (and with external clients) is handled using well-structured DTOs (Data Transfer Objects), allowing clean separation of internal logic from exposed interfaces.
+
+Data Layer – Maintains internal models of step definitions, data definitions, step connections, and flow structures.
 
 ## Features
 
