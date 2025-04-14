@@ -116,15 +116,15 @@ Role-Based Access Control: Permissions determine accessible workflows.
 ![Stepper execution](assert/הרצה.PNG)
 
 ## History - regular user
-![Stepper history](assert/מסך היסטוריה.png)
+![Stepper history](assert/מסך היסטוריה.PNG)
 
 ## Flow Definitions - regular user
-![Stepper Definitions](assert/מסך פולאו דיפינישיין.png)
+![Stepper Definitions](assert/מסך פולאו דיפינישיין.PNG)
 
 ## role manager - Admin 
-![Stepper new role](assert/ניהול תפקידים אדמין.png)
+![Stepper new role](assert/ניהול תפקידים אדמין.PNG)
 
 ## create new role - Admin 
-![Stepper new role](assert/יצירת תפקיד חדש.png)
+![Stepper new role](assert/יצירת תפקיד חדש.PNG)
 
 
