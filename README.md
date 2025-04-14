@@ -112,9 +112,9 @@ Role-Based Access Control: Permissions determine accessible workflows.
   
 - Have elevated permissions to access all flows and execution histories
 
-  
 ## Execution - regular user 
-![Stepper execution](assert/הרצה.png)
+![Stepper execution](./assert/הרצה.png)
+![Test](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Markdown-mark.svg/128px-Markdown-mark.svg.png)
 
 ## History - regular user
 ![Stepper history](assert/מסך היסטוריה.png)
